@@ -29,7 +29,7 @@ The project connects to my mission of raising awareness of mental well-being, es
 
 ## How to run
 1. Open `fmd_prediction_summative.ipynb` in [Google Colab](https://colab.research.google.com/) (File → Upload notebook, or open it from GitHub).
-2. Use a **CPU** runtime (a GPU is not needed for this tabular data).
+2. Use a **CPU** runtime.
 3. Click **Runtime → Run all**. The notebook downloads the dataset from the CDC by itself.
 4. A full run takes about 30 minutes on CPU. The last cell backs up outputs to Google Drive and is only needed in Colab.
 
