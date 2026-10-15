@@ -19,16 +19,16 @@ The project connects to my mission of raising awareness of mental well-being, es
 
 ## Repository structure
 ```
-├── summative.ipynb      # full pipeline: loading, cleaning, EDA, models, evaluation
-├── requirements.txt     # library versions
-├── experiments.csv      # all 28 experiment runs (settings + validation metrics)
-├── test_results.csv     # final test-set results
-├── logs/                # TensorBoard logs for every run
-└── figures/             # plots used in the report
+├── fmd_prediction_summative.ipynb   # full pipeline: loading, cleaning, EDA, models, evaluation
+├── requirements.txt                 # library versions
+├── experiments.csv                  # all 28 experiment runs (settings + validation metrics)
+├── test_results.csv                 # final test-set results
+├── logs/                            # TensorBoard logs for every run
+└── figures/                         # plots used in the report
 ```
 
 ## How to run
-1. Open `summative.ipynb` in [Google Colab](https://colab.research.google.com/) (File → Upload notebook, or open it from GitHub).
+1. Open `fmd_prediction_summative.ipynb` in [Google Colab](https://colab.research.google.com/) (File → Upload notebook, or open it from GitHub).
 2. Use a **CPU** runtime (a GPU is not needed for this tabular data).
 3. Click **Runtime → Run all**. The notebook downloads the dataset from the CDC by itself.
 4. A full run takes about 30 minutes on CPU. The last cell backs up outputs to Google Drive and is only needed in Colab.
@@ -68,7 +68,7 @@ To view the experiment logs: `tensorboard --logdir logs` (the HParams tab compar
 The survey has no questions on sleep (not asked in 2024), loneliness, or social support; all data is self-reported; results come from US adults and may not transfer to other countries; survey weights were not applied; and the data shows associations, not causes.
 
 ## Saved models
-The saved models are not stored in this repository:
+The saved models are not stored in this repository; they are in the project's Google Drive folder (link in the report):
 - `best_ml_gradient_boosting.joblib`: scikit-learn pipeline (preprocessor + gradient boosting)
 - `best_dl_mlp.keras` / `best_dl_mlp.h5`: Keras neural network
 - `preprocessor.joblib`: the fitted preprocessor needed before the neural network
