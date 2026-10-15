@@ -1,0 +1,17 @@
+# Raw dataset (download from CDC; zipped copy is in the Google Drive folder)
+*.XPT
+*.xpt
+*.XPT *
+LLCP2024*
+*.zip
+
+# Saved models (stored in the Google Drive folder)
+models/
+*.joblib
+*.keras
+*.h5
+
+# Colab / Python clutter
+.ipynb_checkpoints/
+__pycache__/
+sample_data/
